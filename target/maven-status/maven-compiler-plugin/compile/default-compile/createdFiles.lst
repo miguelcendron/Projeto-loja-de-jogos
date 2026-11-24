@@ -1,0 +1,5 @@
+br/edu/ifc/videira/loja/dao/JogoDAO.class
+br/edu/ifc/videira/loja/controller/JogoServlet.class
+br/edu/ifc/videira/loja/model/Jogo.class
+br/edu/ifc/videira/loja/dao/Conexao.class
+br/edu/ifc/videira/loja/model/Resumo.class

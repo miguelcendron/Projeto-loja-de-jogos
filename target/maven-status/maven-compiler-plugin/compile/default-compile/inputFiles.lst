@@ -1,0 +1,5 @@
+/home/migueleduardosouthiercendron/Projeto-loja-de-jogos-git/src/main/java/br/edu/ifc/videira/loja/controller/JogoServlet.java
+/home/migueleduardosouthiercendron/Projeto-loja-de-jogos-git/src/main/java/br/edu/ifc/videira/loja/dao/Conexao.java
+/home/migueleduardosouthiercendron/Projeto-loja-de-jogos-git/src/main/java/br/edu/ifc/videira/loja/dao/JogoDAO.java
+/home/migueleduardosouthiercendron/Projeto-loja-de-jogos-git/src/main/java/br/edu/ifc/videira/loja/model/Jogo.java
+/home/migueleduardosouthiercendron/Projeto-loja-de-jogos-git/src/main/java/br/edu/ifc/videira/loja/model/Resumo.java

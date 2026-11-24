@@ -1,0 +1,189 @@
+:root {
+	--fundo: #0f1020;
+	--painel: #181a33;
+	--borda: #2a2d52;
+	--roxo: #7c3aed;
+	--roxo-claro: #a78bfa;
+}
+
+body {
+	background: var(--fundo);
+	color: #e8e8f0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
+}
+
+/* ---------- cabeçalho ---------- */
+.barra {
+	background: var(--painel);
+	border-bottom: 2px solid var(--roxo);
+}
+
+.marca {
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: var(--roxo-claro) !important;
+}
+
+.titulo {
+	color: #fff;
+	font-weight: 600;
+}
+
+/* ---------- painéis ---------- */
+.cartao {
+	background: var(--painel);
+	border: 1px solid var(--borda);
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.stat {
+	background: var(--painel);
+	border: 1px solid var(--borda);
+	border-radius: 12px;
+	padding: 1rem 1.25rem;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.stat-rotulo {
+	color: #9a9cc4;
+	font-size: .75rem;
+	text-transform: uppercase;
+	letter-spacing: .06em;
+}
+
+.stat-valor {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+.stat-alerta .stat-valor {
+	color: #f87171;
+}
+
+/* ---------- formulários ---------- */
+.form-control,
+.form-select {
+	background-color: var(--fundo);
+	color: #fff;
+	border-color: var(--borda);
+}
+
+.form-control:focus,
+.form-select:focus {
+	background-color: var(--fundo);
+	color: #fff;
+	border-color: var(--roxo);
+	box-shadow: 0 0 0 .2rem rgba(124, 58, 237, .25);
+}
+
+.btn-neon {
+	background: var(--roxo);
+	color: #fff;
+	border: none;
+}
+
+.btn-neon:hover {
+	background: #6d28d9;
+	color: #fff;
+	box-shadow: 0 0 12px rgba(124, 58, 237, .6);
+}
+
+/* ---------- cartões de jogo ---------- */
+.jogo-card {
+	background: var(--painel);
+	border: 1px solid var(--borda);
+	border-radius: 14px;
+	overflow: hidden;
+	transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.jogo-card:hover {
+	transform: translateY(-4px);
+	border-color: var(--roxo);
+	box-shadow: 0 8px 24px rgba(124, 58, 237, .25);
+}
+
+.jogo-card .card-title {
+	color: #fff;
+	font-size: 1.05rem;
+	font-weight: 600;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.jogo-card .card-footer {
+	background: transparent;
+	border-top: 1px solid var(--borda);
+}
+
+.preco {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: var(--roxo-claro);
+}
+
+/* ---------- capa (imagem ou cartão colorido) ---------- */
+.capa {
+	position: relative;
+	display: block;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	background: linear-gradient(135deg, hsl(var(--h) 65% 38%), hsl(calc(var(--h) + 40) 70% 22%));
+}
+
+.capa img {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.capa-inicial {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 4rem;
+	font-weight: 800;
+	color: rgba(255, 255, 255, .35);
+}
+
+.selo-plataforma {
+	position: absolute;
+	top: .6rem;
+	left: .6rem;
+	z-index: 2;
+	background: rgba(0, 0, 0, .65);
+	color: #fff;
+	font-size: .72rem;
+	padding: .2rem .6rem;
+	border-radius: 999px;
+}
+
+.capa-grande,
+.capa-previa {
+	border-radius: 14px;
+	border: 1px solid var(--borda);
+}
+
+.capa-grande .capa-inicial {
+	font-size: 7rem;
+}
+
+.descricao {
+	white-space: pre-line;
+}
